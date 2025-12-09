@@ -28,7 +28,7 @@ void	send_msg(pid_t pid, char *msg)
 			else
 				kill(pid, SIGUSR2);
 			bit_mask >>= 1;
-			usleep (500);
+			usleep (100);
 		}
 	}
 }

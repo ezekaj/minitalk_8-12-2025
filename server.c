@@ -16,9 +16,8 @@ static unsigned char	g_bytes;
 
 void	handle_sig(int signum)
 {
-	static int	bit_pos;
+	static int	bit_pos = 0;
 
-	bit_pos = 0;
 	if (signum == SIGUSR1)
 		g_bytes |= (1 << (7 - bit_pos));
 	bit_pos++;
