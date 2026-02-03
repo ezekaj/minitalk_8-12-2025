@@ -1,7 +1,7 @@
 NAME_CLIENT = client
 NAME_SERVER = server
 
-CC = gcc
+CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
