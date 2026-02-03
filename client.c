@@ -50,6 +50,11 @@ int	main(int ac, char **av)
 		return (EXIT_FAILURE);
 	}
 	msg = ft_strdup(av[2]);
+	if (!msg)
+	{
+		ft_printf("Error: Memory allocation failed.\n");
+		return (EXIT_FAILURE);
+	}
 	send_msg(pid, msg);
 	free(msg);
 	return (EXIT_SUCCESS);
